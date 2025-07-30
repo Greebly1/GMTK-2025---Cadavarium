@@ -1,0 +1,45 @@
+[gd_scene load_steps=7 format=3 uid="uid://bfc4qv8oexten"]
+
+[ext_resource type="Script" uid="uid://nah8jrhsplle" path="res://Player_Script.gd" id="1_d60o5"]
+[ext_resource type="Script" uid="uid://dlxcq6tyr48j5" path="res://Kev/Game/Move_Component.gd" id="2_gdp68"]
+[ext_resource type="Script" uid="uid://bemfcktvtjycg" path="res://Kev/Game/Crouch_Component.gd" id="3_irl80"]
+[ext_resource type="Script" uid="uid://dp5s3ei61pvnk" path="res://Kev/Game/Jump_Component.gd" id="4_gdp68"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_748k6"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_d60o5"]
+
+[node name="CharacterBody3D" type="CharacterBody3D"]
+script = ExtResource("1_d60o5")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+unique_name_in_owner = true
+fov = 90.0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+unique_name_in_owner = true
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.0189193, 0)
+shape = SubResource("CapsuleShape3D_748k6")
+
+[node name="ShapeCast3D" type="ShapeCast3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.981648, 0)
+shape = SubResource("CapsuleShape3D_d60o5")
+
+[node name="Move" type="Node" parent="."]
+unique_name_in_owner = true
+script = ExtResource("2_gdp68")
+
+[node name="Crouch" type="Node" parent="." node_paths=PackedStringArray("collision_shape", "camera", "stand_up_check")]
+unique_name_in_owner = true
+script = ExtResource("3_irl80")
+collision_shape = NodePath("../CollisionShape3D")
+camera = NodePath("../Camera3D")
+stand_up_check = NodePath("../ShapeCast3D")
+
+[node name="Jump" type="Node" parent="."]
+unique_name_in_owner = true
+script = ExtResource("4_gdp68")
+
+[node name="Debug" type="RichTextLabel" parent="."]
+offset_right = 254.0
+offset_bottom = 81.0
