@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://uienltvs3am8"
-path="res://.godot/imported/LeftDoor2.fbx-22c3f27e94f56f52864d37ddfd236225.scn"
+uid="uid://lejelp0w4aly"
+path="res://.godot/imported/SlidingDoorFrame2.fbx-1189847f9eaed9c5410d57e92da13a96.scn"
 
 [deps]
 
-source_file="res://SeamlessPortalsTest/Art/LeftDoor2.fbx"
-dest_files=["res://.godot/imported/LeftDoor2.fbx-22c3f27e94f56f52864d37ddfd236225.scn"]
+source_file="res://Portals/Art/SlidingDoorFrame2.fbx"
+dest_files=["res://.godot/imported/SlidingDoorFrame2.fbx-1189847f9eaed9c5410d57e92da13a96.scn"]
 
 [params]
 

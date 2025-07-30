@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://bbdga261gqgwa"
-path="res://.godot/imported/RightDoor2.fbx-cbc303335e4d23f8e6b152e9278a951a.scn"
+path="res://.godot/imported/RightDoor2.fbx-8bf3eff4d5326f0d418314464ff5b589.scn"
 
 [deps]
 
-source_file="res://SeamlessPortalsTest/Art/RightDoor2.fbx"
-dest_files=["res://.godot/imported/RightDoor2.fbx-cbc303335e4d23f8e6b152e9278a951a.scn"]
+source_file="res://Portals/Art/RightDoor2.fbx"
+dest_files=["res://.godot/imported/RightDoor2.fbx-8bf3eff4d5326f0d418314464ff5b589.scn"]
 
 [params]
 

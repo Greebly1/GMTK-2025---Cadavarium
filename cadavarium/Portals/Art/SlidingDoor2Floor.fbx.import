@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://pwnhyg8m4hix"
-path="res://.godot/imported/SlidingDoor2Floor.fbx-12cc5bd8da7589b2e832f6c54d30bc04.scn"
+path="res://.godot/imported/SlidingDoor2Floor.fbx-328746171c5f905218a84d7b885648ed.scn"
 
 [deps]
 
-source_file="res://SeamlessPortalsTest/Art/SlidingDoor2Floor.fbx"
-dest_files=["res://.godot/imported/SlidingDoor2Floor.fbx-12cc5bd8da7589b2e832f6c54d30bc04.scn"]
+source_file="res://Portals/Art/SlidingDoor2Floor.fbx"
+dest_files=["res://.godot/imported/SlidingDoor2Floor.fbx-328746171c5f905218a84d7b885648ed.scn"]
 
 [params]
 

@@ -1,0 +1,18 @@
+[gd_scene load_steps=6 format=3 uid="uid://b1wj8bkdeu6su"]
+
+[ext_resource type="Script" uid="uid://db6t42lspx34r" path="res://Portals/PortalGate.gd" id="1_f332w"]
+[ext_resource type="PackedScene" uid="uid://pwnhyg8m4hix" path="res://Portals/Art/SlidingDoor2Floor.fbx" id="2_p4mag"]
+[ext_resource type="PackedScene" uid="uid://lejelp0w4aly" path="res://Portals/Art/SlidingDoorFrame2.fbx" id="3_b0w5x"]
+[ext_resource type="PackedScene" uid="uid://bbdga261gqgwa" path="res://Portals/Art/RightDoor2.fbx" id="4_1xeqk"]
+[ext_resource type="PackedScene" uid="uid://uienltvs3am8" path="res://Portals/Art/LeftDoor2.fbx" id="5_n54mr"]
+
+[node name="PortalGateDoor" type="Node3D"]
+script = ExtResource("1_f332w")
+
+[node name="SlidingDoor2Floor" parent="." instance=ExtResource("2_p4mag")]
+
+[node name="SlidingDoorFrame2" parent="." instance=ExtResource("3_b0w5x")]
+
+[node name="RightDoor2" parent="." instance=ExtResource("4_1xeqk")]
+
+[node name="LeftDoor2" parent="." instance=ExtResource("5_n54mr")]
