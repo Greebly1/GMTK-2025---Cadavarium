@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://ccg0jemluuoj3"]
+
+[ext_resource type="Script" uid="uid://drw5ixrkq8h25" path="res://Kev/Game/game_manager.gd" id="1_5ei1o"]
+[ext_resource type="PackedScene" uid="uid://bfc4qv8oexten" path="res://Kev/Game/character_body_3d.tscn" id="1_lkkwf"]
+
+[sub_resource type="Environment" id="Environment_5ei1o"]
+
+[node name="Game Scene" type="Node3D"]
+script = ExtResource("1_5ei1o")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.245629, 0.969364, 0, -0.969364, 0.245629, 0, 1.59261, 0)
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_5ei1o")
+
+[node name="CharacterBody3D" parent="." instance=ExtResource("1_lkkwf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.20884, 0)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.284668, -6.32233, -3.41846)
+use_collision = true
+size = Vector3(39.9365, 1, 36.6128)
