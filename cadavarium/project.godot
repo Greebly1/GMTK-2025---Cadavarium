@@ -15,6 +15,10 @@ run/main_scene="res://Kev/Game/game_scene.tscn"
 config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://icon.svg"
 
+[autoload]
+
+GlobalStrategies="*res://Globals/GlobalStrategies.gd"
+
 [display]
 
 window/size/viewport_width=1280
